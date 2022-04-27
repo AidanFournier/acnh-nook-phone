@@ -5,3 +5,12 @@
 body {
   margin: 0;
 }
+
+/* Main */
+
+.main {
+  background: url(./images/background.jpeg) no-repeat; 
+  background-size: cover;
+  height: 100vh;
+}
+
