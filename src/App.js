@@ -4,6 +4,9 @@ import React from "react"
 export default function App() {
   return (
     <div className="main">
+      <div className="phone">
+
+      </div>
     </div>
   );
 }
