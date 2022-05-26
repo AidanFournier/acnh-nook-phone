@@ -1,10 +1,12 @@
 import React from "react"
-import Main from "./components/Main"
+// import Card from "./components/Card"
 
 export default function App() {
   return (
-    <div>
-      <Main />
+    <div className="main">
+      <div className="phone">
+
+      </div>
     </div>
   );
 }
