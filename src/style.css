@@ -36,3 +36,16 @@ body {
   box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px
     rgba(0, 0, 0, 0.1);
 }
+
+/* Header */
+
+.header  {
+  display: flex;
+  justify-content: center;
+}
+
+.header > h1 {
+  font-family: 'Baloo 2', cursive;
+  color: #756B5D;
+  font-size: 28px;
+}
