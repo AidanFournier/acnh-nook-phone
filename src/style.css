@@ -50,8 +50,16 @@ body {
 .header > h1 {
   color: #756B5D;
   font-size: 28px;
+  margin: 5px 0 0 0;
 }
 
 nav {
+  margin-top: 15px;
   color: rgb(223, 217, 203);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--nav-location {
+  height: 20px;
 }
