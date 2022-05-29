@@ -42,10 +42,16 @@ body {
 .header  {
   display: flex;
   justify-content: center;
+  font-family: 'Baloo 2', cursive;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header > h1 {
-  font-family: 'Baloo 2', cursive;
   color: #756B5D;
   font-size: 28px;
+}
+
+nav {
+  color: rgb(223, 217, 203);
 }
