@@ -65,6 +65,10 @@ nav {
   height: 20px;
 }
 
+.header--nav-time {
+  margin: 0;
+}
+
 .header--nav-location {
   height: 20px;
   margin-left: 15px;
