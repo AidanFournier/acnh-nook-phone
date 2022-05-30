@@ -54,12 +54,18 @@ body {
 }
 
 nav {
-  margin-top: 15px;
+  margin-top: 20px;
   color: rgb(223, 217, 203);
   display: flex;
   justify-content: space-between;
+  width: 70%;
+}
+
+.header--nav-service {
+  height: 20px;
 }
 
 .header--nav-location {
   height: 20px;
+  margin-left: 15px;
 }
