@@ -8,8 +8,8 @@ export default function App() {
       <h1>Nook Phone</h1>
       <div className="phone">
         <Header />
+        <Card />
       </div>
-      <Card />
     </div>
   );
 }
