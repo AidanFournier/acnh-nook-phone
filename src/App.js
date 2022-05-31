@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./components/Header"
+import Card from "./components/Card"
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <div className="phone">
         <Header />
       </div>
+      <Card />
     </div>
   );
 }
