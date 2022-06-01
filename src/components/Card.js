@@ -9,6 +9,12 @@ export default function Card() {
 
     const [allVillagers, setAllVillagers] = React.useState([])
 
+    React.useEffect(() => {
+        fetch("https://api.nookipedia.com/villagers?game=NH")
+            .then(res => res.json())
+            .then(data => setAllVillagers(data))
+    })
+
     function handleChange(event) {
         const {name, value} = event.target
         setVillager(prevVillager => ({
