@@ -9,7 +9,7 @@ export default function Card() {
     const [villager, setVillager] = React.useState("");
     const [villagerInfo, setVillagerInfo] = React.useState({});
 
-    const url = `https://api.nookipedia.com/villagers?game=NH&name=${villager}`;
+    const url = `https://api.nookipedia.com/villagers?game=NH&nhdetails=true&name=${villager}`;
     const header = {
         "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
         "Accept-Version": "1.5.0"
@@ -45,11 +45,10 @@ export default function Card() {
                         <FontAwesomeIcon icon={faPaw}></FontAwesomeIcon>
                 </button>
             </div>
-            {setVillagerInfo[0] ? 
+            {villagerInfo[0] ? 
             <p>{villagerInfo[0].name}</p> 
             : <p>No villagers found.</p>
-            
-        }
+            }
         </div>
     )
 }
