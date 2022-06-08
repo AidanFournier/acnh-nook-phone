@@ -15,30 +15,16 @@ export default function Card() {
         "Accept-Version": "1.5.0"
     }
 
-    // React.useEffect(() => {
-    //     axios.get(url, {headers: header})
-    //         .then(response => {
-    //             setVillagerInfo(response.data)
-    //             console.log(villagerInfo)
-    //         })
-    // }, [url])
-
-    // function handleChange(event) {
-    //     const {name, value} = event.target
-    //     setVillager(prevVillager => ({
-    //         ...prevVillager,
-    //         [name]: value
-    //     }))
-    // }
-
     function searchVillager(e) {
         e.preventDefault();
+
         
         axios.get(url, {headers: header})
             .then(response => {
                 setVillagerInfo(response.data)
                 console.log(response.data)
             })
+            
             setVillager('')
     }
 
@@ -59,7 +45,11 @@ export default function Card() {
                         <FontAwesomeIcon icon={faPaw}></FontAwesomeIcon>
                 </button>
             </div>
-            <p>{villagerInfo[0].name}</p>
+            {setVillagerInfo[0] ? 
+            <p>{villagerInfo[0].name}</p> 
+            : <p>No villagers found.</p>
+            
+        }
         </div>
     )
 }
