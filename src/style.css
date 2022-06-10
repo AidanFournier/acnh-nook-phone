@@ -81,6 +81,8 @@ nav {
   color: #756B5D;
 }
 
+/* Card: form */
+
 .form {
   display: flex;
   justify-content: center;
@@ -116,3 +118,43 @@ nav {
   rgba(0, 0, 0, 0.1);
 }
 
+/* Card: villager info */
+
+.villager--results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.polaroid-picture {
+  margin-top: 40px;
+  border: 10px solid  white;
+  border-radius: 5px;
+  max-width: 250px;
+  min-width: 200px;
+  max-height: 400px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+  position: relative;
+  box-shadow: 0px 2px 5px 3px
+  rgba(0, 0, 0, 0.1);
+  background: url('./images/beach-background.png') no-repeat center center/cover;
+}
+
+.villager--image {
+  max-height: 105%;
+  max-width: 115%;
+  position: absolute;
+  bottom: 3%;
+  filter: drop-shadow(5px 5px 5px
+  rgba(0, 0, 0, 0.2));
+}
+
+.wooden-sign {
+  /* position: absolute;
+  bottom: 5%;
+  width: 80%; */
+}
