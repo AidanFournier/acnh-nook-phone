@@ -50,9 +50,12 @@ export default function Card() {
                 <div className="villager--results">
                     <div className="polaroid-picture">
                         {villagerInfo[0] ? <img src={`${villagerInfo[0].image_url}`} className="villager--image" alt="Villager"/> : null}
-                        
+                        <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
+                        <div className="villager--name">
+                            {villagerInfo ? <h2>{villagerInfo[0].name}</h2> : null}
+                        </div>
                     </div>
-                    <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
+                    
                 </div>
             }
 
