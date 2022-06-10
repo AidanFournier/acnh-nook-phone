@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaw } from "@fortawesome/free-solid-svg-icons"
+import WoodSign from "../images/wood-sign.png"
 
 
 export default function Card() {
@@ -17,7 +18,6 @@ export default function Card() {
 
     function searchVillager(e) {
         e.preventDefault();
-
         
         axios.get(url, {headers: header})
             .then(response => {
@@ -45,10 +45,18 @@ export default function Card() {
                         <FontAwesomeIcon icon={faPaw}></FontAwesomeIcon>
                 </button>
             </div>
-            {villagerInfo[0] ? 
-            <p>{villagerInfo[0].name}</p> 
-            : <p>No villagers found.</p>
+
+            {villagerInfo[0] !== undefined &&
+                <div className="villager--results">
+                    <div className="polaroid-picture">
+                        {villagerInfo[0] ? <img src={`${villagerInfo[0].image_url}`} className="villager--image" alt="Villager"/> : null}
+                        
+                    </div>
+                    <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
+                </div>
             }
+
+
         </div>
     )
 }
