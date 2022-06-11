@@ -55,6 +55,19 @@ export default function Card() {
                             {villagerInfo ? <h2>{villagerInfo[0].name}</h2> : null}
                         </div>
                     </div>
+                    <div className="villager--stats">
+                        <div className="villager--type">
+                            <div className="villager--personality">
+                                <h3>Personality</h3>
+                                <p>{villagerInfo[0].personality}</p>
+                            </div>
+                            <div className="villager--species">
+                                <h3>Species</h3>
+                                <p>{villagerInfo[0].species}</p>
+                            </div>
+                        </div>
+
+                    </div>
                     
                 </div>
             }

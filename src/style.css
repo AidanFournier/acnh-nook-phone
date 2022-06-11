@@ -161,3 +161,39 @@ nav {
   position: absolute;
   bottom: -26%;
 }
+
+.villager--stats {
+  display: flex;
+}
+
+.villager--type {
+  display: flex;
+}
+
+.villager--personality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.villager--species {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.villager--personality > h3, .villager--species > h3 {
+  color: rgb(223, 217, 203);
+  font-size: 16px;
+  font-weight: lighter;
+  border-bottom: 1px solid rgb(223, 217, 203);
+  padding: 0 5px 3px 5px;
+  margin-bottom: 2px;
+}
+
+.villager--personality > p, .villager--species > p {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 24px;
+}
