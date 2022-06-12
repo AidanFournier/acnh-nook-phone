@@ -197,3 +197,7 @@ nav {
   font-weight: bolder;
   font-size: 24px;
 }
+
+.villager--birthday {
+  display: flex;
+}
