@@ -59,14 +59,18 @@ export default function Card() {
                         <div className="villager--type">
                             <div className="villager--personality">
                                 <h3>Personality</h3>
-                                <p>{villagerInfo[0].personality}</p>
+                                {villagerInfo ? <p>{villagerInfo[0].personality.toLowerCase()}</p> : null}
                             </div>
                             <div className="villager--species">
                                 <h3>Species</h3>
-                                <p>{villagerInfo[0].species}</p>
+                                {villagerInfo ? <p>{villagerInfo[0].species.toLowerCase()}</p> : null}
                             </div>
                         </div>
-
+                    </div>
+                    <div className="villager--birthday">
+                        {villagerInfo ? <p>{villagerInfo[0].birthday_month}</p> : null}
+                        {villagerInfo ? <p>{villagerInfo[0].birthday_day}</p> : null}
+                        {villagerInfo ? <p>{villagerInfo[0].sign}</p> : null}
                     </div>
                     
                 </div>
