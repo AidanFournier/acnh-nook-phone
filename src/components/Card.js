@@ -3,6 +3,7 @@ import axios from "axios"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaw } from "@fortawesome/free-solid-svg-icons"
 import WoodSign from "../images/wood-sign.png"
+import Cake from "../images/cake.png"
 
 
 export default function Card() {
@@ -68,6 +69,7 @@ export default function Card() {
                         </div>
                     </div>
                     <div className="villager--birthday">
+                        <img src= {Cake} alt="Bithday cake" className="cake" />
                         {villagerInfo ? <p>{villagerInfo[0].birthday_month}</p> : null}
                         {villagerInfo ? <p>{villagerInfo[0].birthday_day}</p> : null}
                         {villagerInfo ? <p>{villagerInfo[0].sign}</p> : null}

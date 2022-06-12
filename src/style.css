@@ -200,4 +200,17 @@ nav {
 
 .villager--birthday {
   display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: auto;
+  width: 60%;
+  /* margin: 0; */
+}
+
+.villager--birthday > img {
+  height: 20px;
+}
+
+.villager--birthday > p {
+  margin: 0;
 }
