@@ -188,8 +188,8 @@ nav {
   font-size: 16px;
   font-weight: lighter;
   border-bottom: 1px solid rgb(223, 217, 203);
-  padding: 0 5px 3px 5px;
-  margin-bottom: 2px;
+  padding: 0 5px 0 5px;
+  margin: 8px 0 0 0;
 }
 
 .villager--personality > p, .villager--species > p {
@@ -204,7 +204,7 @@ nav {
   align-items: start;
   margin: auto;
   width: 60%;
-  /* margin: 0; */
+  margin: 0;
 }
 
 .villager--birthday > img {
@@ -213,4 +213,8 @@ nav {
 
 .villager--birthday > p {
   margin: 0;
+}
+
+.star-sign {
+  height: 24px;
 }
