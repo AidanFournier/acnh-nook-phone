@@ -16,6 +16,7 @@ import Sagittarius from "../images/sagittarius.png"
 import Taurus from "../images/taurus.png"
 import Virgo from "../images/virgo.png"
 import Scorpio from "../images/scorpio.png"
+import QuoteBox from "../images/quote-box.png"
 
 
 
@@ -117,7 +118,11 @@ export default function Card() {
                         {villagerInfo ? <p>{villagerInfo[0].birthday_day}</p> : null}
                         {villagerInfo ? <p>{starSign(villagerInfo[0].sign)}</p> : null}
                     </div>
-                    
+                    <div className="villager--quote-box">
+                        <img src= {QuoteBox} alt="Quote bubble" className="quote-bubble" />
+                    </div>
+
+
                 </div>
             }
 
