@@ -16,6 +16,7 @@ import Sagittarius from "../images/sagittarius.png"
 import Taurus from "../images/taurus.png"
 import Virgo from "../images/virgo.png"
 import Scorpio from "../images/scorpio.png"
+import TextBubble from "../images/text-bubble.png"
 
 
 
@@ -117,7 +118,20 @@ export default function Card() {
                         {villagerInfo ? <p>{villagerInfo[0].birthday_day}</p> : null}
                         {villagerInfo ? <p>{starSign(villagerInfo[0].sign)}</p> : null}
                     </div>
-                    
+                    <div className="bottom-stats">
+                        <div className="villager--quote-bubble">
+                            <div>
+                                <img src= {TextBubble} alt="Text bubble" className="text-bubble"/>
+                            </div>
+                            {villagerInfo ? <p>{villagerInfo[0].nh_details.catchphrase}</p> : null}
+                        </div>
+                        <div className="villager--hobby">
+                            <h4>Hobby</h4>
+                            {villagerInfo ? <p>{villagerInfo[0].nh_details.hobby} </p> : null}
+                        </div>
+                    </div>
+
+
                 </div>
             }
 
