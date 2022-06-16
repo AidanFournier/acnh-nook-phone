@@ -32,6 +32,20 @@ export default function Card() {
             setVillager('')
     }
 
+    function getDaySuffix(num) {
+        var array = ("" + num).split("").reverse(); // E.g. 123 = array("3","2","1")
+        
+        if (array[1] !== "1") { // Number is not in the teens
+            switch (array[0]) {
+                case "1": return "st";
+                case "2": return "nd";
+                case "3": return "rd";
+            }
+        }
+    
+        return "th";
+    }
+
     return (
         <div className="card">
             <div className="form">
@@ -74,7 +88,7 @@ export default function Card() {
                     <div className="villager--birthday">
                         <img src= {Cake} alt="Bithday cake" className="cake" />
                         {villagerInfo ? <p>{villagerInfo[0].birthday_month}</p> : null}
-                        {villagerInfo ? <p>{villagerInfo[0].birthday_day}</p> : null}
+                        {villagerInfo ? <p>{villagerInfo[0].birthday_day}{getDaySuffix(villagerInfo[0].birthday_day)}</p> : null}
                     </div>
                     <div className="bottom-stats">
                         <div className="villager--quote-bubble">
