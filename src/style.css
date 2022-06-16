@@ -202,7 +202,7 @@ nav {
 
 .villager--birthday {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: start;
   margin: auto;
   width: 60%;
@@ -211,10 +211,12 @@ nav {
 
 .villager--birthday > img {
   height: 20px;
+  padding-right: 10px;
 }
 
 .villager--birthday > p {
   margin: 0;
+  padding-right: 5px;
 }
 
 .star-sign {
