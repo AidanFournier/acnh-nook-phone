@@ -1,23 +1,12 @@
 import React from "react"
 import axios from "axios"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaw } from "@fortawesome/free-solid-svg-icons"
+
 import WoodSign from "../images/wood-sign.png"
 import Cake from "../images/cake.png"
-import Pisces from "../images/pisces.png"
-import Cancer from "../images/cancer.png"
-import Aries from "../images/aries.png"
-import Aquarius from "../images/aquarius.png"
-import Capricorn from "../images/capricorn.png"
-import Libra from "../images/libra.png"
-import Gemini from "../images/gemini.png"
-import Leo from "../images/leo.png"
-import Sagittarius from "../images/sagittarius.png"
-import Taurus from "../images/taurus.png"
-import Virgo from "../images/virgo.png"
-import Scorpio from "../images/scorpio.png"
 import TextBubble from "../images/text-bubble.png"
-
 
 
 export default function Card() {
@@ -41,36 +30,6 @@ export default function Card() {
             })
             
             setVillager('')
-    }
-
-    function starSign(sign) {
-        if (sign === "Pisces") {
-           return <img src= {Pisces} alt="Pisces star sign" className="star-sign" />
-        } else if (sign === "Cancer") {
-            return <img src= {Cancer} alt="Cancer star sign" className="star-sign" />
-        } else if (sign === "Aries") {
-            return <img src= {Aries} alt="Aries star sign" className="star-sign" />
-        } else if (sign === "Aquarius") {
-            return <img src= {Aquarius} alt="Aquarius star sign" className="star-sign" />
-        } else if (sign === "Capricorn") {
-            return <img src= {Capricorn} alt="Capricorn star sign" className="star-sign" />
-        } else if (sign === "Libra") {
-            return <img src= {Libra} alt="Libra star sign" className="star-sign" />
-        } else if (sign === "Gemini") {
-            return <img src= {Gemini} alt="Gemini star sign" className="star-sign" />
-        } else if (sign === "Leo") {
-            return <img src= {Leo} alt="Leo star sign" className="star-sign" />
-        } else if (sign === "Sagittarius") {
-            return <img src= {Sagittarius} alt="Sagittarius star sign" className="star-sign" />
-        } else if (sign === "Taurus") {
-            return <img src= {Taurus} alt="Taurus star sign" className="star-sign" />
-        } else if (sign === "Virgo") {
-            return <img src= {Virgo} alt="Virgo star sign" className="star-sign" />
-        } else if (sign === "Scorpio") {
-            return <img src= {Scorpio} alt="Scorpio star sign" className="star-sign" />
-        } else {
-            return
-        }
     }
 
     return (
@@ -116,7 +75,6 @@ export default function Card() {
                         <img src= {Cake} alt="Bithday cake" className="cake" />
                         {villagerInfo ? <p>{villagerInfo[0].birthday_month}</p> : null}
                         {villagerInfo ? <p>{villagerInfo[0].birthday_day}</p> : null}
-                        {villagerInfo ? <p>{starSign(villagerInfo[0].sign)}</p> : null}
                     </div>
                     <div className="bottom-stats">
                         <div className="villager--quote-bubble">
