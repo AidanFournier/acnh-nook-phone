@@ -102,6 +102,9 @@ export default function Card() {
                             {villagerInfo ? <p>{villagerInfo[0].nh_details.hobby} </p> : null}
                         </div>
                     </div>
+                    <div className="next-picture">
+                    {villagerInfo[0] ? <img src={`${villagerInfo[0].nh_details.house_exterior_url}`} className="villager--image" alt="Villager"/> : null}
+                    </div>
 
 
                 </div>
