@@ -274,3 +274,10 @@ nav {
   font-weight: bolder;
   margin: 0 10px 0 0;
 }
+
+.house-icon {
+  height: 24px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}

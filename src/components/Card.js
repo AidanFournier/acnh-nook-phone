@@ -7,6 +7,7 @@ import { faPaw } from "@fortawesome/free-solid-svg-icons"
 import WoodSign from "../images/wood-sign.png"
 import Cake from "../images/cake.png"
 import TextBubble from "../images/text-bubble.png"
+import House from "../images/house.png"
 
 
 export default function Card() {
@@ -103,7 +104,7 @@ export default function Card() {
                         </div>
                     </div>
                     <div className="next-picture">
-                    {villagerInfo[0] ? <img src={`${villagerInfo[0].nh_details.house_exterior_url}`} className="villager--image" alt="Villager"/> : null}
+                    <img src= {House} alt="House icon" className="house-icon" />
                     </div>
 
 
