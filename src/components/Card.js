@@ -8,6 +8,7 @@ import WoodSign from "../images/wood-sign.png"
 import Cake from "../images/cake.png"
 import TextBubble from "../images/text-bubble.png"
 import House from "../images/house.png"
+import Arrow from "../images/arrow.png"
 
 
 export default function Card() {
@@ -104,7 +105,8 @@ export default function Card() {
                         </div>
                     </div>
                     <div className="next-picture">
-                    <img src= {House} alt="House icon" className="house-icon" />
+                        <img src= {House} alt="House icon" className="house-icon" />
+                        <img src= {Arrow} alt="Arrow" className="arrow" />
                     </div>
 
 

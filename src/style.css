@@ -281,3 +281,11 @@ nav {
   top: 40%;
   right: 0;
 }
+
+.arrow {
+  height: 18px;
+  position: absolute;
+  top: 47%;
+  right: 1%;
+  transform: rotate(20deg);
+}
