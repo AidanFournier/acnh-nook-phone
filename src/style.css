@@ -129,6 +129,10 @@ nav {
   position: relative;
 }
 
+/* .polaroid-pictures {
+  width: 800px;
+} */
+
 .polaroid-picture {
   margin-top: 35px;
   border: solid  white;
@@ -153,15 +157,49 @@ nav {
   rgba(0, 0, 0, 0.2));
 }
 
+.house-exterior-img {
+  width: 95%;
+}
+
+.house-interior-img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .wooden-sign {
   position: absolute;
   bottom: -18%;
   width: 80%;
 }
 
-.villager--name  {
+.villager--name {
   position: absolute;
   bottom: -26%;
+}
+
+.villager--name-exterior, .villager--name-interior {
+  position: absolute;
+  bottom: -24%;
+  font-size: 18px;
+}
+
+.house-icon {
+  height: 24px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.arrow {
+  height: 18px;
+  position: absolute;
+  top: 47%;
+  right: 1%;
+  transform: rotate(20deg);
+}
+
+.hide {
+  display: none;
 }
 
 .villager--stats {
@@ -275,17 +313,3 @@ nav {
   margin: 0 10px 0 0;
 }
 
-.house-icon {
-  height: 24px;
-  position: absolute;
-  top: 40%;
-  right: 0;
-}
-
-.arrow {
-  height: 18px;
-  position: absolute;
-  top: 47%;
-  right: 1%;
-  transform: rotate(20deg);
-}

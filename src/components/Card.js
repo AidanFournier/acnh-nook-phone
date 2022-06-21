@@ -30,7 +30,6 @@ export default function Card() {
                 setVillagerInfo(response.data)
                 console.log(response.data)
             })
-            
             setVillager('')
     }
 
@@ -68,13 +67,32 @@ export default function Card() {
 
             {villagerInfo[0] !== undefined &&
                 <div className="villager--results">
-                    <div className="polaroid-picture">
+                    <div className="polaroid-picture villager-avatar hide">
                         {villagerInfo[0] ? <img src={`${villagerInfo[0].image_url}`} className="villager--image" alt="Villager"/> : null}
                         <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
                         <div className="villager--name">
                             {villagerInfo ? <h2>{villagerInfo[0].name}</h2> : null}
                         </div>
                     </div>
+                    <div className="polaroid-picture house-exterior hide">
+                        {villagerInfo[0] ? <img src={`${villagerInfo[0].nh_details.house_exterior_url}`} className="villager--image house-exterior-img" alt="Villager's house exterior"/> : null}
+                        <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
+                        <h3 className="villager--name-exterior">
+                            House Exterior
+                        </h3>
+                    </div>
+                    <div className="polaroid-picture house-interior">
+                        {villagerInfo[0] ? <img src={`${villagerInfo[0].nh_details.house_interior_url}`} className="house-interior-img" alt="Villager's house interior"/> : null}
+                        <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
+                        <h3 className="villager--name-interior">
+                            House Interior
+                        </h3>
+                    </div>
+                    <div className="next-picture-exterior slideRight">
+                        <img src= {House} alt="House icon" className="house-icon" />
+                        <img src= {Arrow} alt="Arrow" className="arrow" />
+                    </div>
+                    
                     <div className="villager--stats">
                         <div className="villager--type">
                             <div className="villager--personality">
@@ -104,10 +122,7 @@ export default function Card() {
                             {villagerInfo ? <p>{villagerInfo[0].nh_details.hobby} </p> : null}
                         </div>
                     </div>
-                    <div className="next-picture">
-                        <img src= {House} alt="House icon" className="house-icon" />
-                        <img src= {Arrow} alt="Arrow" className="arrow" />
-                    </div>
+                    
 
 
                 </div>
