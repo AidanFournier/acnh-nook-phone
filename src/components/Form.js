@@ -12,7 +12,7 @@ export default function Form(props) {
                 className="form--input"
                 name="villager"
                 value={props.villager}
-                onChange={props.handleClick}
+                // onChange={props.handleClick}
             />
             <button 
                 className="form--button"

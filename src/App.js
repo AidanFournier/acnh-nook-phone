@@ -18,23 +18,35 @@ export default function App() {
         "Accept-Version": "1.5.0"
     }
 
-    function searchVillager(e) {
-      e.preventDefault();
-      console.log(e);
+    // function searchVillager(e) {
+    //   e.preventDefault();
+    //   console.log(e);
       
-      axios.get(url, {headers: header})
-          .then(response => {
-              setVillagerInfo(response.data)
-              // console.log(response.data)
-          })
-          setVillager('')
+    //   axios.get(url, {headers: header})
+    //       .then(response => {
+    //           setVillagerInfo(response.data)
+    //           console.log(response.data)
+    //       })
+    //       .catch((error) => {
+    //         console.log('error' + error);
+    //       });
+    //       setVillager('');
+    // }
+
+  React.useEffect(() => {
+    
+    async function fetchData() { 
+      const request = await axios.get(url, { headers: {header} })
+        .then(request => {
+            setVillagerInfo(request.data)
+            console.log(request.data)
+        })
+        // .catch((error) => {
+        //   console.log('error' + error);
+        // });
+        setVillager('');
     }
-
-  React.useEffect(function() {
-    
-    
-    searchVillager();
-
+    fetchData();
   }, [villager])
     
   
@@ -46,8 +58,8 @@ export default function App() {
         <Header />
         <Form 
           value={villager}
-          handleChange={event => setVillager(event.target.value)}
-          handleClick={searchVillager}
+          // handleChange={event => setVillager(event.target.value)}
+          handleClick={event => setVillager(event.target.value)}
         />
         {/* {villagerInfo[0] ? 
         (<Carousel 
