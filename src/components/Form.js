@@ -11,12 +11,12 @@ export default function Form(props) {
                 placeholder="Villager's name"
                 className="form--input"
                 name="villager"
-                value={props.villager}
-                onChange={props.handleClick}
+                value={props.value}
+                onChange={props.handleChange}
             />
             <button 
                 className="form--button"
-                onClick={props.searchVillager}>
+                onClick={props.handleClick}>
                     <FontAwesomeIcon icon={faPaw}></FontAwesomeIcon>
             </button>
         </div>

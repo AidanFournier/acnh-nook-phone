@@ -2,8 +2,10 @@ import React from "react"
 import axios from "axios"
 
 import Header from "./components/Header"
-import Card from "./components/Card"
 import Form from "./components/Form"
+// import Carousel from "./components/Carousel"
+// import Card from "./components/Card"
+
 
 export default function App() {
 
@@ -16,17 +18,19 @@ export default function App() {
       "Accept-Version": "1.5.0"
   }
 
-  function searchVillager(e) {
-    e.preventDefault();
-    
-    axios.get(url, {headers: header})
-        .then(response => {
-            setVillagerInfo(response.data)
-            console.log(response.data)
-        })
-        setVillager('')
-  }
+  const searchVillager = async () => {
+    try {
+      const response = await axios.get(url, {headers: header});
+      setVillagerInfo(response.data);
+      console.log(response.data);
+    } catch (err) {
+      console.log('👹 error:' + err);
+    }
+  };
 
+  React.useEffect(() => {
+    searchVillager();
+  }, []);
 
   return (
     <div className="main">
@@ -34,12 +38,77 @@ export default function App() {
       <div className="phone">
         <Header />
         <Form 
-          value={villager}
+          // value={villager}
           handleChange={event => setVillager(event.target.value)}
+          // handleClick={event => setVillager(event.target.value)}
           handleClick={searchVillager}
         />
+        {/* {villagerInfo[0] ? 
+        (<Carousel 
+          villagerInfo={villagerInfo[0]}
+          villagerImage={villagerInfo[0].image_url}
+          villagerName={villagerInfo[0].name}
+          villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
+          villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
+        />) : (
+          <div></div>
+        )
+        } */}
         {/* <Card /> */}
+
       </div>
     </div>
   );
 }
+
+  // function searchVillager(e) {
+    //   e.preventDefault();
+    //   console.log(e);
+      
+    //   axios.get(url, {headers: header})
+    //       .then(response => {
+    //           setVillagerInfo(response.data)
+    //           console.log(response.data)
+    //       })
+    //       .catch((error) => {
+    //         console.log('error' + error);
+    //       });
+    //       setVillager('');
+    // }
+
+
+    // function searchVillager(event) {
+    //   console.log(event);
+    //   setVillager(event.target.value);
+    // }
+
+    // React.useEffect(() => {
+  //     // e.preventDefault();
+  //     // console.log(e);
+      
+  //     axios.get(url, {headers: header})
+  //         .then(response => {
+  //             setVillagerInfo(response.data)
+  //             console.log(response.data)
+  //         })
+  //         .catch((error) => {
+  //           console.log('error' + error);
+  //         });
+  //         // setVillager('');
+    
+  // }, [villager])
+    
+  // async function fetchData() { 
+  //   const request = await axios.get(url, { headers: {header} })
+  //     .then(response => {
+  //         setVillagerInfo(response.data)
+  //         console.log(response.data)
+  //     })
+  //     // .catch((error) => {
+  //     //   console.log('error' + error);
+  //     // });
+  //     setVillager('');
+  // }
+  // fetchData();
+
+  
