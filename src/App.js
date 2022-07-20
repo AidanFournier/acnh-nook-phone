@@ -13,43 +13,24 @@ export default function App() {
   const [villagerInfo, setVillagerInfo] = React.useState({});
 
   const url = `https://api.nookipedia.com/villagers?game=NH&nhdetails=true&name=${villager}`;
-    const header = {
-        "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
-        "Accept-Version": "1.5.0"
-    }
+  const header = {
+      "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
+      "Accept-Version": "1.5.0"
+  }
 
-    // function searchVillager(e) {
-    //   e.preventDefault();
-    //   console.log(e);
-      
-    //   axios.get(url, {headers: header})
-    //       .then(response => {
-    //           setVillagerInfo(response.data)
-    //           console.log(response.data)
-    //       })
-    //       .catch((error) => {
-    //         console.log('error' + error);
-    //       });
-    //       setVillager('');
-    // }
+  const searchVillager = async () => {
+    try {
+      const response = await axios.get(url, {headers: header});
+      setVillagerInfo(response.data);
+      console.log(response.data);
+    } catch (err) {
+      console.log('👹 error:' + err);
+    }
+  };
 
   React.useEffect(() => {
-    
-    async function fetchData() { 
-      const request = await axios.get(url, { headers: {header} })
-        .then(request => {
-            setVillagerInfo(request.data)
-            console.log(request.data)
-        })
-        // .catch((error) => {
-        //   console.log('error' + error);
-        // });
-        setVillager('');
-    }
-    fetchData();
-  }, [villager])
-    
-  
+    searchVillager();
+  }, []);
 
   return (
     <div className="main">
@@ -57,9 +38,10 @@ export default function App() {
       <div className="phone">
         <Header />
         <Form 
-          value={villager}
-          // handleChange={event => setVillager(event.target.value)}
-          handleClick={event => setVillager(event.target.value)}
+          // value={villager}
+          handleChange={event => setVillager(event.target.value)}
+          // handleClick={event => setVillager(event.target.value)}
+          handleClick={searchVillager}
         />
         {/* {villagerInfo[0] ? 
         (<Carousel 
@@ -78,3 +60,55 @@ export default function App() {
     </div>
   );
 }
+
+  // function searchVillager(e) {
+    //   e.preventDefault();
+    //   console.log(e);
+      
+    //   axios.get(url, {headers: header})
+    //       .then(response => {
+    //           setVillagerInfo(response.data)
+    //           console.log(response.data)
+    //       })
+    //       .catch((error) => {
+    //         console.log('error' + error);
+    //       });
+    //       setVillager('');
+    // }
+
+
+    // function searchVillager(event) {
+    //   console.log(event);
+    //   setVillager(event.target.value);
+    // }
+
+    // React.useEffect(() => {
+  //     // e.preventDefault();
+  //     // console.log(e);
+      
+  //     axios.get(url, {headers: header})
+  //         .then(response => {
+  //             setVillagerInfo(response.data)
+  //             console.log(response.data)
+  //         })
+  //         .catch((error) => {
+  //           console.log('error' + error);
+  //         });
+  //         // setVillager('');
+    
+  // }, [villager])
+    
+  // async function fetchData() { 
+  //   const request = await axios.get(url, { headers: {header} })
+  //     .then(response => {
+  //         setVillagerInfo(response.data)
+  //         console.log(response.data)
+  //     })
+  //     // .catch((error) => {
+  //     //   console.log('error' + error);
+  //     // });
+  //     setVillager('');
+  // }
+  // fetchData();
+
+  
