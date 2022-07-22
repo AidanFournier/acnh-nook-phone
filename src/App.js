@@ -15,7 +15,8 @@ export default function App() {
   const url = `https://api.nookipedia.com/villagers?game=NH&nhdetails=true&name=${villager}`;
   const header = {
       "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
-      "Accept-Version": "1.5.0"
+      "Accept-Version": "1.5.0",
+      "Accept": "application/json, text/plain, /","Content-Type": "multipart/form-data"
   }
 
   const searchVillager = async () => {
@@ -24,8 +25,9 @@ export default function App() {
       setVillagerInfo(response.data);
       console.log(response.data);
     } catch (err) {
-      console.log('👹 error:' + err);
-    }
+      console.log('👹 ERROR: ' + err.response.data);
+    };
+    setVillager('');
   };
 
   React.useEffect(() => {

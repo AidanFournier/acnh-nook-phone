@@ -12,10 +12,6 @@ import Arrow from "../images/arrow.png"
 
 export default function Carousel(props) {
 
-    // return (
-    //     <div>{props.villagerName}</div>
-    // )
-
     return (
         <Swiper 
         navigation={true} 
@@ -23,10 +19,6 @@ export default function Carousel(props) {
         className="mySwiper"
         >
         
-        <div className="card">
-            
-
-           
             <div className="villager--results">
                 <SwiperSlide>
                     <div className="polaroid-picture villager-avatar">
@@ -61,10 +53,8 @@ export default function Carousel(props) {
                     <img src= {House} alt="House icon" className="house-icon" />
                     <img src= {Arrow} alt="Arrow" className="arrow" />
                 </div>
-                
-            </div>
             
-        </div>
+            </div>     
         </Swiper>
     )
 }

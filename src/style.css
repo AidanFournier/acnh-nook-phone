@@ -77,10 +77,10 @@ nav {
 
 /* Card */
 
-.card {
+/* .card {
   margin: 10px 15px 0 15px;
   color: #756B5D;
-}
+} */
 
 /* Card: form */
 
@@ -135,6 +135,7 @@ nav {
 
 .polaroid-picture {
   margin-top: 35px;
+  margin-left: 18%;
   border: solid  white;
   border-width: 10px 10px 60px 10px;
   border-radius: 5px;
