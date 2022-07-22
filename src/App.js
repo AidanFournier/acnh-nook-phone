@@ -3,7 +3,7 @@ import axios from "axios"
 
 import Header from "./components/Header"
 import Form from "./components/Form"
-// import Carousel from "./components/Carousel"
+import Carousel from "./components/Carousel"
 // import Card from "./components/Card"
 
 
@@ -38,12 +38,10 @@ export default function App() {
       <div className="phone">
         <Header />
         <Form 
-          // value={villager}
           handleChange={event => setVillager(event.target.value)}
-          // handleClick={event => setVillager(event.target.value)}
           handleClick={searchVillager}
         />
-        {/* {villagerInfo[0] ? 
+        {villagerInfo[0] ? 
         (<Carousel 
           villagerInfo={villagerInfo[0]}
           villagerImage={villagerInfo[0].image_url}
@@ -51,9 +49,9 @@ export default function App() {
           villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
           villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
         />) : (
-          <div></div>
+          <div>Undefined</div>
         )
-        } */}
+        }
         {/* <Card /> */}
 
       </div>
