@@ -4,7 +4,7 @@ import axios from "axios"
 import Header from "./components/Header"
 import Form from "./components/Form"
 import Carousel from "./components/Carousel"
-// import Card from "./components/Card"
+import Card from "./components/Card"
 
 
 export default function App() {
@@ -44,17 +44,31 @@ export default function App() {
           handleClick={searchVillager}
         />
         {villagerInfo[0] ? 
-        (<Carousel 
-          villagerInfo={villagerInfo[0]}
-          villagerImage={villagerInfo[0].image_url}
-          villagerName={villagerInfo[0].name}
-          villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
-          villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
-        />) : (
-          <div>Undefined</div>
-        )
+          (<Carousel 
+            villagerInfo={villagerInfo[0]}
+            villagerImage={villagerInfo[0].image_url}
+            villagerName={villagerInfo[0].name}
+            villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
+            villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
+          />
+          ) : (
+            <div>Undefined</div>
+          )
         }
-        {/* <Card /> */}
+        {villagerInfo[0] ? 
+          (<Card 
+            villagerInfo={villagerInfo[0]}
+            villagerPersonality={villagerInfo[0].personality.toLowerCase()}
+            villagerSpecies={villagerInfo[0].species.toLowerCase()}
+            villagerBirthdayMonth={villagerInfo[0].birthday_month}
+            villagerBirthdayDay={villagerInfo[0].birthday_day}
+            catchphrase={villagerInfo[0].nh_details.catchphrase}
+            hobby={villagerInfo[0].nh_details.hobby}
+          />
+          ) : (
+            null
+          )
+        }
 
       </div>
     </div>
