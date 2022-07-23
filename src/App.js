@@ -27,7 +27,6 @@ export default function App() {
     } catch (err) {
       console.log('👹 ERROR: ' + err.response.data);
     };
-    setVillager('');
   };
 
   React.useEffect(() => {
@@ -40,6 +39,7 @@ export default function App() {
       <div className="phone">
         <Header />
         <Form 
+          value = {villager}
           handleChange={event => setVillager(event.target.value)}
           handleClick={searchVillager}
         />
