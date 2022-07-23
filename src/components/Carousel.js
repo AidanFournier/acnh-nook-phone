@@ -6,9 +6,6 @@ import 'swiper/css';
 import "swiper/css/navigation";
 
 import WoodSign from "../images/wood-sign.png"
-import House from "../images/house.png"
-import Arrow from "../images/arrow.png"
-
 
 export default function Carousel(props) {
 
@@ -47,12 +44,6 @@ export default function Carousel(props) {
                         </h3>
                     </div>
                 </SwiperSlide>
-
-                
-                <div className="next-picture-exterior slideRight">
-                    <img src= {House} alt="House icon" className="house-icon" />
-                    <img src= {Arrow} alt="Arrow" className="arrow" />
-                </div>
             
             </div>     
         </Swiper>
