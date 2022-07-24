@@ -43,7 +43,7 @@ export default function App() {
           handleChange={event => setVillager(event.target.value)}
           handleClick={searchVillager}
         />
-        {villagerInfo[0] ? 
+        {villagerInfo.length === 1 ? 
           (<Carousel 
             villagerInfo={villagerInfo[0]}
             villagerImage={villagerInfo[0].image_url}
@@ -55,7 +55,7 @@ export default function App() {
             <div>Undefined</div>
           )
         }
-        {villagerInfo[0] ? 
+        {villagerInfo.length === 1 ? 
           (<Card 
             villagerInfo={villagerInfo[0]}
             villagerPersonality={villagerInfo[0].personality.toLowerCase()}
