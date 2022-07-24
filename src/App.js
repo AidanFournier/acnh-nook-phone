@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Form from "./components/Form"
 import Carousel from "./components/Carousel"
 import Card from "./components/Card"
+import Landing from "./components/Landing"
 
 
 export default function App() {
@@ -43,8 +44,8 @@ export default function App() {
           handleChange={event => setVillager(event.target.value)}
           handleClick={searchVillager}
         />
-        {villagerInfo.length === 1 ? 
-          (<Carousel 
+        {villagerInfo.length === 1 ? (
+          <Carousel 
             villagerInfo={villagerInfo[0]}
             villagerImage={villagerInfo[0].image_url}
             villagerName={villagerInfo[0].name}
@@ -52,7 +53,7 @@ export default function App() {
             villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
           />
           ) : (
-            <div>Undefined</div>
+            <Landing />
           )
         }
         {villagerInfo.length === 1 ? 
