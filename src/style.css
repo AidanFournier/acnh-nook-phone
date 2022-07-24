@@ -76,6 +76,40 @@ nav {
   margin: 0 8px 0 15px;
 }
 
+/* Landing */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 80%;
+  color: #756B5D;
+  padding-top: 30px;
+}
+
+.landing > h4, .landing > p {
+  z-index: 3;
+  padding: 10px 40px;
+  margin: 0;
+}
+
+.acnh-logo {
+  width: 80px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.curly-arrow {
+  width: 200px;
+  position: absolute;
+  right: 14px;
+  top: 5px;
+  z-index: 3;
+}
+
 /* Form */
 
 .form {
@@ -98,6 +132,7 @@ nav {
 
 ::placeholder {
   color: rgb(223, 217, 203);
+  font-weight: 400;
 }
 
 .form > button {
