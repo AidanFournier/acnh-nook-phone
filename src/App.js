@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div className="main">
-      <h1>Nook Phone</h1>
+      <h1>NookPhone</h1>
       <div className="phone">
         <Header />
         <Form 
@@ -71,6 +71,7 @@ export default function App() {
         }
 
       </div>
+      <p className="dev-credit">© Aidan Fournier 2022</p>
     </div>
   );
 }
