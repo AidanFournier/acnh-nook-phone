@@ -18,7 +18,8 @@ export default function App() {
       "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
       "Accept-Version": "1.5.0",
       "Access-Control-Allow-Origin": "*",
-      'Content-Type': 'application/x-www-form-urlencoded'
+      // 'Content-Type': 'application/x-www-form-urlencoded'
+      "Content-Type": "application/json"
       // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authortization",
       // "Acces-Control-Allow-Methods": "GET"
       // "Accept": "application/json, text/plain, /",
@@ -27,11 +28,11 @@ export default function App() {
 
   const searchVillager = async () => {
     try {
-      const response = await axios.get(url, {headers: header, withCredentials: false});
+      const response = await axios.get(url, {headers: header, mode: "cors", withCredentials: false});
       setVillagerInfo(response.data);
       console.log(response.data);
     } catch (err) {
-      console.log('👹 ERROR: ' + err.response.data);
+      console.log('👹 ERROR: ' + err);
     };
   };
 
