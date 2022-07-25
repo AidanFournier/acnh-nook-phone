@@ -292,7 +292,7 @@ nav {
 .villager--birthday {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   margin: auto;
   width: 60%;
   margin: 0;
