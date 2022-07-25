@@ -32,6 +32,8 @@ export default function App() {
 
   React.useEffect(() => {
     searchVillager();
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
