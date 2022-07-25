@@ -17,7 +17,10 @@ export default function App() {
   const header = {
       "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
       "Accept-Version": "1.5.0",
-      "Accept": "application/json, text/plain, /","Content-Type": "multipart/form-data"
+      "Access-Control-Allow-Origin": "*"
+      // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authortization",
+      // "Acces-Control-Allow-Methods": "GET"
+      // "Accept": "application/json, text/plain, /","Content-Type": "multipart/form-data"
   }
 
   const searchVillager = async () => {
