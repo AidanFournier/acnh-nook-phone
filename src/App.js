@@ -17,15 +17,17 @@ export default function App() {
   const header = {
       "X-API-KEY": process.env.REACT_APP_NOOKIPEDIA_API_KEY,
       "Accept-Version": "1.5.0",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      'Content-Type': 'application/x-www-form-urlencoded'
       // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authortization",
       // "Acces-Control-Allow-Methods": "GET"
-      // "Accept": "application/json, text/plain, /","Content-Type": "multipart/form-data"
+      // "Accept": "application/json, text/plain, /",
+      // "Content-Type": "multipart/form-data"
   }
 
   const searchVillager = async () => {
     try {
-      const response = await axios.get(url, {headers: header});
+      const response = await axios.get(url, {headers: header, withCredentials: false});
       setVillagerInfo(response.data);
       console.log(response.data);
     } catch (err) {
