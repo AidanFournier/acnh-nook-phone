@@ -21,7 +21,7 @@ export default function App() {
       // 'Content-Type': 'application/x-www-form-urlencoded'
       "Content-Type": "application/json"
       // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authortization",
-      // "Acces-Control-Allow-Methods": "GET"
+      // "Access-Control-Allow-Methods": "GET"
       // "Accept": "application/json, text/plain, /",
       // "Content-Type": "multipart/form-data"
   }
