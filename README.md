@@ -1,9 +1,10 @@
 <h1 align="center">ACNH NookPhone </h1>
 <h3 align="center">A handy villager wiki</h3>
 
-![Home Page](https://user-images.githubusercontent.com/78288118/182603960-027b4356-8a54-4146-8f21-8f06a66e57e3.png)
-![Villager's Image and Facts](https://user-images.githubusercontent.com/78288118/182604073-6b66043e-4aba-49ff-8269-27118f520a9b.png)
-![Villager's House Exterior](https://user-images.githubusercontent.com/78288118/182604152-1bf56ff3-20df-48bb-92db-1a20f7cf11c0.png)
+![Home Page](https://user-images.githubusercontent.com/78288118/182615073-187a9365-3d55-419d-b11a-0a69a76c4039.png)
+![Villager's Image and Facts](https://user-images.githubusercontent.com/78288118/182615305-2fca79ed-464f-48e0-97b7-53c20ba056e9.png)
+![Villager's House Exterior](https://user-images.githubusercontent.com/78288118/182615374-8b32faa7-64ae-44cb-bb33-009a68625aa4.png)
+
 
 ## Table of contents
 * [Introduction](#introduction)
