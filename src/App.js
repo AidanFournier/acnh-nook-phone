@@ -19,11 +19,12 @@ export default function App() {
       "Accept-Version": "1.5.0",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json"
+
   }
 
   const searchVillager = async () => {
     try {
-      const response = await axios.get(url, {headers: header, mode: "cors"});
+      const response = await axios.get(url, {headers: header, mode: "cors", withCredentials: false});
       setVillagerInfo(response.data);
       console.log(response.data);
     } catch (err) {
