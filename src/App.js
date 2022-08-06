@@ -6,6 +6,7 @@ import Form from "./components/Form"
 import Carousel from "./components/Carousel"
 import Card from "./components/Card"
 import Landing from "./components/Landing"
+import Error from "./components/Error"
 
 
 export default function App() {
@@ -38,6 +39,32 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  function handleResults(results) {
+    if (results === 1) {
+      return <Carousel 
+            villagerInfo={villagerInfo[0]}
+            villagerImage={villagerInfo[0].image_url}
+            villagerName={villagerInfo[0].name}
+            villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
+            villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
+          />
+    } else if (results === 0) {
+      return <Error />
+    } else {
+      return <Landing />
+    }
+  };
+
+  // function handleResults(results) {
+  //   if (results === 1) {
+  //    console.log('results are 1!')
+  //   } else if (results >= 2) {
+  //     console.log('results are more than 1!')
+  //   } else {
+  //     console.log('results are 0!')
+  //   }
+  // };
+
   return (
     <div className="main">
       <h1>NookPhone</h1>
@@ -48,7 +75,8 @@ export default function App() {
           handleChange={event => setVillager(event.target.value)}
           handleClick={searchVillager}
         />
-        {villagerInfo.length === 1 ? (
+        {handleResults(villagerInfo.length)}
+        {/* {villagerInfo.length === 1 ? (
           <Carousel 
             villagerInfo={villagerInfo[0]}
             villagerImage={villagerInfo[0].image_url}
@@ -59,7 +87,7 @@ export default function App() {
           ) : (
             <Landing />
           )
-        }
+        } */}
         {villagerInfo.length === 1 ? 
           (<Card 
             villagerInfo={villagerInfo[0]}
