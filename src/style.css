@@ -40,6 +40,12 @@ body {
   position: relative;
 }
 
+.dev-credit {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #756B5D;
+}
+
 /* Header */
 
 .header  {
@@ -365,8 +371,22 @@ nav {
   margin: 0 10px 0 0;
 }
 
-.dev-credit {
-  margin: 0 0 6px 0;
-  font-size: 14px;
+/* Error */
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 80%;
   color: #756B5D;
+  padding-top: 30px;
+}
+
+.error-page > h2, .error-page > p {
+  z-index: 3;
+  padding: 10px 40px;
+  margin: 0;
 }
