@@ -1,7 +1,7 @@
 <h1 align="center">ACNH NookPhone </h1>
 <h3 align="center">A handy villager wiki</h3>
 
-![Home Page](https://user-images.githubusercontent.com/78288118/182615830-7da61652-04a6-4dbf-bb67-0fd0b2ae177f.png)
+![Home Page](https://user-images.githubusercontent.com/78288118/183456195-f0767392-ba5e-42ce-9a14-71476445f8d2.png)
 ![Villager's Image and Facts](https://user-images.githubusercontent.com/78288118/182615836-7e6c504d-8402-4580-971b-29f2d0a1edad.png)
 ![Villager's House Exterior](https://user-images.githubusercontent.com/78288118/182615848-6c540e01-f079-4639-86ba-8aee35a64902.png)
 
@@ -14,7 +14,7 @@
 * [Credits](#credits)
 
 ## Introduction
-This mobile-first application in intended to support the gameplay of Animal Crossing New Horizons. When a villager arrives at the campsite on your island, you can quickly pull out your NookPhone to learn the important facts of who they are. What is their personality? When is their birthday? Is their house a 'love-it' or 'list-it'?
+This mobile-first application provides gameplay support for Animal Crossing New Horizons. When a villager arrives at the campsite on your island, you can quickly pull out your NookPhone to learn the important facts of who they are. What is their personality? When is their birthday? Is their house a 'love-it' or 'list-it'?
 
 With this information just a click away, you can quickly decide whether to give that villager the boot or an invitation to stay. 
 
