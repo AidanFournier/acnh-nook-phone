@@ -1,0 +1,17 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 80%;
+    color: #756B5D;
+    padding-top: 30px;
+  }
+  
+  .error-page > h2, .error-page > p {
+    z-index: 3;
+    padding: 10px 40px;
+    margin: 0;
+  }

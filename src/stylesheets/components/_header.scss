@@ -1,0 +1,33 @@
+.header  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header > h1 {
+    color: #756B5D;
+    font-size: 28px;
+    margin: 5px 0 0 0;
+}
+
+nav {
+    margin-top: 20px;
+    color: rgb(223, 217, 203);
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.header--nav-service {
+    height: 20px;
+}
+
+.header--nav-time {
+    margin: 0;
+}
+
+.header--nav-location {
+    height: 20px;
+    margin: 0 8px 0 15px;
+}
