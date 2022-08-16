@@ -1,0 +1,37 @@
+.main {
+    background: url(../images/background.jpeg) no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Baloo 2', cursive;
+}
+
+.main > h1 {
+    font-family: FinkHeavy;
+    font-size: 48px;
+    color: #FCC533;
+    margin: 24px 0 18px 0;
+    text-shadow: 
+        4px 4px 2px rgba(100, 66, 2, 1),
+        7px 6px 2px rgb(150, 110, 40);
+}
+
+.phone {
+    background-color: #F7F4E7;
+    width: 80%;
+    height: 84%;
+    margin: 0 0 8px 0;
+    border-radius: 70px;
+    box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px
+        rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.dev-credit {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    color: #756B5D;
+}

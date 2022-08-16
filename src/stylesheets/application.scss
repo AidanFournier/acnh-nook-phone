@@ -1,17 +1,27 @@
 // Graphical variables
 @import "config/fonts";
-// @import "config/colors";
+@import "config/colors";
 
 // External libraries
-@import "font-awesome-sprockets";
-@import "font-awesome";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
 
 // // Your CSS partials
-// @import "components/index";
-// @import "pages/index";
-// @import 'components/card';
-// @import "components/product_page";
-// @import "pages/profile";
-// @import "components/tabs";
-// @import "components/form";
-// @import "components/map"
+@import "components/index";
+@import "pages/index";
+@import 'components/card';
+@import "components/carousel";
+@import "pages/error";
+@import "pages/landing";
+@import "pages/main";
+@import "components/form";
+@import "components/header";
+
+// Global styles
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
