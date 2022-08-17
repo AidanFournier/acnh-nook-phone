@@ -6,21 +6,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Baloo 2', cursive;
+    font-family: $body-font;
 }
 
-.main > h1 {
-    font-family: FinkHeavy;
+.title {
+    font-family: $acnh-font;
     font-size: 48px;
-    color: #FCC533;
+    color: $orange;
     margin: 24px 0 18px 0;
     text-shadow: 
-        4px 4px 2px rgba(100, 66, 2, 1),
-        7px 6px 2px rgb(150, 110, 40);
+        4px 4px 2px $chocolate-brown,
+        7px 6px 2px $honey-brown;
 }
 
 .phone {
-    background-color: #F7F4E7;
+    background-color: $cream;
     width: 80%;
     height: 84%;
     margin: 0 0 8px 0;
@@ -33,5 +33,5 @@
 .dev-credit {
     margin: 0 0 6px 0;
     font-size: 14px;
-    color: #756B5D;
+    color: $dark-brown;
 }

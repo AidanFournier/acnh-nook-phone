@@ -6,14 +6,13 @@
     text-align: center;
     position: relative;
     height: 80%;
-    color: #756B5D;
+    color: $dark-brown;
     padding-top: 30px;
-  }
-  
-  .landing > h4, .landing > p {
-    z-index: 3;
-    padding: 10px 40px;
-    margin: 0;
+    h4, p {
+      z-index: 3;
+      padding: 10px 40px;
+      margin: 0;
+    }
   }
   
   .acnh-logo {
