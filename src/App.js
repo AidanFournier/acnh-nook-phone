@@ -67,7 +67,7 @@ export default function App() {
 
   return (
     <div className="main">
-      <h1>NookPhone</h1>
+      <h1 className="title">NookPhone</h1>
       <div className="phone">
         <Header />
         <Form 
