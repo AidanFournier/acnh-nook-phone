@@ -1,115 +1,104 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  .villager--type {
-    display: flex;
-  }
+.villager--type {
+  display: flex;
+}
   
-  .villager--personality {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    color: #756B5D;
-  }
-  
-  .villager--species {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #756B5D;
-  }
-  
-  .villager--personality > h3, .villager--species > h3 {
-    color: rgb(223, 217, 203);
+.villager--personality, .villager--species {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark-brown;
+  h3 {
+    color: $ash-brown;
     font-size: 16px;
     font-weight: lighter;
-    border-bottom: 1px solid rgb(223, 217, 203);
+    border-bottom: 1px solid $ash-brown;
     padding: 0 5px 0 5px;
     margin: 8px 0 0 0;
   }
-  
-  .villager--personality > p, .villager--species > p {
+  p {
     margin: 0;
     font-weight: bolder;
     font-size: 24px;
   }
-  
-  .villager--birthday {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-    width: 60%;
-    margin: 0;
-    color: #756B5D;
-  }
-  
-  .villager--birthday > img {
+}
+
+.villager--personality {
+  margin-right: 20px;
+}
+
+.villager--birthday {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  width: 60%;
+  margin: 0;
+  color: $dark-brown;
+  img {
     height: 20px;
     padding-right: 10px;
   }
-  
-  .villager--birthday > p {
+  p {
     margin: 0;
     padding-right: 5px;
   }
-  
-  .bottom-stats {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    position: absolute;
-    bottom: 12px;
-  }
-  
-  .text-bubble {
-    height: 80px;
-    width: 150px;
-    transform: rotate(-5deg);
-    filter: drop-shadow(5px 3px 5px
-    rgba(0, 0, 0, 0.1));
-  }
-  
-  .villager--quote-bubble {
-    position: relative;
-  }
-  
-  .villager--quote-bubble > p {
+}
+
+.bottom-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 15px;
+  position: absolute;
+  bottom: 12px;
+}
+
+.text-bubble {
+  height: 80px;
+  width: 150px;
+  transform: rotate(-5deg);
+  filter: drop-shadow(5px 3px 5px
+  rgba(0, 0, 0, 0.1));
+}
+
+.villager--quote-bubble {
+  position: relative;
+  p {
     left: 0;
     position: absolute;
     text-align: center;
     top: 20px;
     width: 100%;
     transform: rotate(-5deg);
-    color: #756B5D;
+    color: $dark-brown;
   }
-  
-  .villager--hobby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 20px;
-    color: #756B5D;
-  }
-  
-  .villager--hobby > h4 {
-    color: rgb(223, 217, 203);
+}
+
+.villager--hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+  color: $dark-brown;
+  h4 {
+    color: $ash-brown;
     font-size: 16px;
     font-weight: lighter;
-    border-bottom: 1px solid rgb(223, 217, 203);
+    border-bottom: 1px solid $ash-brown;
     padding: 0 10px 0 10px;
     margin: 18px 10px 0 0;
   }
-  
-  .villager--hobby > p {
+  p {
     margin: 0;
     font-weight: bolder;
     margin: 0 10px 0 0;
   }
+}
