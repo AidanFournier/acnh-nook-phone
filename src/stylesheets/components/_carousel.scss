@@ -60,14 +60,14 @@
   .villager--name {
     position: absolute;
     bottom: -26%;
-    color: rgba(100, 66, 2, 1);
+    color: $chocolate-brown;
   }
   
   .villager--name-exterior, .villager--name-interior {
     position: absolute;
     bottom: -23%;
     font-size: 18px;
-    color: rgba(100, 66, 2, 1);
+    color: $chocolate-brown;
   }
   
   .swiper-button-next {
