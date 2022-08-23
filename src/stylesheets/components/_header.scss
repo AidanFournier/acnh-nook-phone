@@ -4,21 +4,15 @@
     align-items: center;
     flex-direction: column;
     h1 {
-        color: #756B5D;
+        color: $dark-brown;
         font-size: 28px;
         margin: 5px 0 0 0;
     }
 }
 
-// .header > h1 {
-//     color: #756B5D;
-//     font-size: 28px;
-//     margin: 5px 0 0 0;
-// }
-
 nav {
     margin-top: 20px;
-    color: rgb(223, 217, 203);
+    color: $ash-brown;
     display: flex;
     justify-content: space-between;
     width: 70%;
