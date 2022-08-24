@@ -25,17 +25,17 @@ export default function Card(props) {
              <div className="villager--type">
                 <div className="villager--personality">
                     <h3>Personality</h3>
-                    <p>{props.villagerPersonality}</p>
+                    <p>{props.personality}</p>
                 </div>
                 <div className="villager--species">
                     <h3>Species</h3>
-                    <p>{props.villagerSpecies}</p>
+                    <p>{props.species}</p>
                 </div>
             </div>
             <div className="villager--birthday">
                 <img src= {Cake} alt="Bithday cake" className="cake" />
-                <p>{props.villagerBirthdayMonth}</p>
-                <p>{props.villagerBirthdayDay}{getDaySuffix(props.villagerBirthdayDay)}</p>
+                <p>{props.birthdMonth}</p>
+                <p>{props.birthDay}{getDaySuffix(props.birthDay)}</p>
             </div>
             <div className="bottom-stats">
                 <div className="villager--quote-bubble">

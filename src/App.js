@@ -43,10 +43,10 @@ export default function App() {
     if (results === 1) {
       return <Carousel 
             villagerInfo={villagerInfo[0]}
-            villagerImage={villagerInfo[0].image_url}
-            villagerName={villagerInfo[0].name}
-            villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
-            villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
+            image={villagerInfo[0].image_url}
+            name={villagerInfo[0].name}
+            exterior={villagerInfo[0].nh_details.house_exterior_url}
+            interior={villagerInfo[0].nh_details.house_interior_url}
           />
     } else if (results === 0) {
       return <Error />
@@ -54,16 +54,6 @@ export default function App() {
       return <Landing />
     }
   };
-
-  // function handleResults(results) {
-  //   if (results === 1) {
-  //    console.log('results are 1!')
-  //   } else if (results >= 2) {
-  //     console.log('results are more than 1!')
-  //   } else {
-  //     console.log('results are 0!')
-  //   }
-  // };
 
   return (
     <div className="main">
@@ -76,25 +66,13 @@ export default function App() {
           handleClick={searchVillager}
         />
         {handleResults(villagerInfo.length)}
-        {/* {villagerInfo.length === 1 ? (
-          <Carousel 
-            villagerInfo={villagerInfo[0]}
-            villagerImage={villagerInfo[0].image_url}
-            villagerName={villagerInfo[0].name}
-            villagerHouseExterior={villagerInfo[0].nh_details.house_exterior_url}
-            villagerHouseInterior={villagerInfo[0].nh_details.house_interior_url}
-          />
-          ) : (
-            <Landing />
-          )
-        } */}
         {villagerInfo.length === 1 ? 
           (<Card 
             villagerInfo={villagerInfo[0]}
-            villagerPersonality={villagerInfo[0].personality.toLowerCase()}
-            villagerSpecies={villagerInfo[0].species.toLowerCase()}
-            villagerBirthdayMonth={villagerInfo[0].birthday_month}
-            villagerBirthdayDay={villagerInfo[0].birthday_day}
+            personality={villagerInfo[0].personality.toLowerCase()}
+            species={villagerInfo[0].species.toLowerCase()}
+            birthdMonth={villagerInfo[0].birthday_month}
+            birthDay={villagerInfo[0].birthday_day}
             catchphrase={villagerInfo[0].nh_details.catchphrase}
             hobby={villagerInfo[0].nh_details.hobby}
           />
@@ -108,62 +86,3 @@ export default function App() {
     </div>
   );
 }
-
-// / 'Content-Type': 'application/x-www-form-urlencoded'
-//       "Content-Type": "application/json"
-      // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authortization",
-      // "Access-Control-Allow-Methods": "GET"
-      // "Accept": "application/json, text/plain, /",
-      // "Content-Type": "multipart/form-data"
-
-  // function searchVillager(e) {
-    //   e.preventDefault();
-    //   console.log(e);
-      
-    //   axios.get(url, {headers: header})
-    //       .then(response => {
-    //           setVillagerInfo(response.data)
-    //           console.log(response.data)
-    //       })
-    //       .catch((error) => {
-    //         console.log('error' + error);
-    //       });
-    //       setVillager('');
-    // }
-
-
-    // function searchVillager(event) {
-    //   console.log(event);
-    //   setVillager(event.target.value);
-    // }
-
-    // React.useEffect(() => {
-  //     // e.preventDefault();
-  //     // console.log(e);
-      
-  //     axios.get(url, {headers: header})
-  //         .then(response => {
-  //             setVillagerInfo(response.data)
-  //             console.log(response.data)
-  //         })
-  //         .catch((error) => {
-  //           console.log('error' + error);
-  //         });
-  //         // setVillager('');
-    
-  // }, [villager])
-    
-  // async function fetchData() { 
-  //   const request = await axios.get(url, { headers: {header} })
-  //     .then(response => {
-  //         setVillagerInfo(response.data)
-  //         console.log(response.data)
-  //     })
-  //     // .catch((error) => {
-  //     //   console.log('error' + error);
-  //     // });
-  //     setVillager('');
-  // }
-  // fetchData();
-
-  

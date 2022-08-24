@@ -19,16 +19,16 @@ export default function Carousel(props) {
             <div className="villager--results">
                 <SwiperSlide>
                     <div className="polaroid-picture villager-avatar">
-                        <img src={`${props.villagerImage}`} className="villager--image" alt="Villager"/>
+                        <img src={`${props.image}`} className="villager--image" alt="Villager"/>
                         <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
                         <div className="villager--name">
-                            <h2>{props.villagerName}</h2>
+                            <h2>{props.name}</h2>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="polaroid-picture house-exterior">
-                        <img src={`${props.villagerHouseExterior}`} className="villager--image house-exterior-img" alt="Villager's house exterior"/>
+                        <img src={`${props.exterior}`} className="villager--image house-exterior-img" alt="Villager's house exterior"/>
                         <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
                         <h3 className="villager--name-exterior">
                             House Exterior
@@ -37,7 +37,7 @@ export default function Carousel(props) {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="polaroid-picture house-interior">
-                        <img src={`${props.villagerHouseInterior}`} className="house-interior-img" alt="Villager's house interior"/>
+                        <img src={`${props.interior}`} className="house-interior-img" alt="Villager's house interior"/>
                         <img src= {WoodSign} alt="Wooden sign" className="wooden-sign" />
                         <h3 className="villager--name-interior">
                             House Interior
