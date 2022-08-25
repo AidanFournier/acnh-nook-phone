@@ -22,7 +22,9 @@
 .phone {
     background-color: $cream;
     width: 80%;
+    max-width: 312px;
     height: 84%;
+    max-height: 710px;
     margin: 0 0 8px 0;
     border-radius: 70px;
     box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px
@@ -34,4 +36,11 @@
     margin: 0 0 6px 0;
     font-size: 14px;
     color: #756B5D;
+}
+
+@media (max-height: 768px) {
+    .phone {
+        overflow: scroll;
+        height: auto;
+    }
 }
