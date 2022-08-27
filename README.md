@@ -22,7 +22,7 @@ I creeated this app to practice some foundational skills of React, such as using
 
 
 ## URL
-[ACNH NookPhone's website](https://acnh-nookphone.com/) ( 🚧 under construction 🚧 )
+[ACNH NookPhone's website](https://acnh-nookphone.com/)
 
 ## Technologies
 
