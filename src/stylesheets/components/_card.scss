@@ -30,7 +30,7 @@
 }
 
 .villager--personality {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .villager--birthday {
@@ -64,9 +64,9 @@
 }
 
 .text-bubble {
-  height: 80px;
+  height: 70px;
   width: 150px;
-  transform: rotate(-5deg);
+  // transform: rotate(-5deg);
   filter: drop-shadow(5px 3px 5px
   rgba(0, 0, 0, 0.1));
   margin: 0;
@@ -78,9 +78,9 @@
     left: 0;
     position: absolute;
     text-align: center;
-    top: 20px;
+    top: 10px;
     width: 100%;
-    transform: rotate(-5deg);
+    // transform: rotate(-5deg);
     color: $dark-brown;
   }
 }

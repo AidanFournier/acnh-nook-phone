@@ -69,8 +69,8 @@ export default function App() {
         {villagerInfo.length === 1 ? 
           (<Card 
             villagerInfo={villagerInfo[0]}
-            personality={villagerInfo[0].personality.toLowerCase()}
-            species={villagerInfo[0].species.toLowerCase()}
+            personality={villagerInfo[0].personality}
+            species={villagerInfo[0].species}
             birthdMonth={villagerInfo[0].birthday_month}
             birthDay={villagerInfo[0].birthday_day}
             catchphrase={villagerInfo[0].nh_details.catchphrase}
