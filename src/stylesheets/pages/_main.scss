@@ -3,7 +3,7 @@
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     font-family: $body-font;
@@ -24,6 +24,7 @@
     width: 80%;
     max-width: 312px;
     height: 84%;
+    min-height: 640px;
     max-height: 710px;
     margin: 0 0 8px 0;
     border-radius: 70px;

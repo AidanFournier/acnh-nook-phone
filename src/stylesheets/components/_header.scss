@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: $cream;
+    position: sticky;
+    top: 0px;
+    border-radius: 70px;
     h1 {
         color: $dark-brown;
         font-size: 28px;
@@ -29,4 +33,11 @@ nav {
 .header--nav-location {
     height: 20px;
     margin: 0 8px 0 15px;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
