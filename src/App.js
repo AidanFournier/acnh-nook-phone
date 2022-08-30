@@ -7,6 +7,7 @@ import Carousel from "./components/Carousel"
 import Card from "./components/Card"
 import Landing from "./components/Landing"
 import Error from "./components/Error"
+import Metatags from "./components/Metatags"
 
 
 export default function App() {
@@ -57,6 +58,7 @@ export default function App() {
 
   return (
     <div className="main">
+      <Metatags />
       <h1 className="title">NookPhone</h1>
       <div className="phone">
         <Header />
