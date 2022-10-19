@@ -14,7 +14,7 @@
 * [Credits](#credits)
 
 ## Introduction
-This mobile-first application provides gameplay support for Animal Crossing New Horizons. When a villager arrives at the campsite on your island, you can quickly pull out your NookPhone to learn the important facts of who they are. What is their personality? When is their birthday? Is their house a 'love-it' or 'list-it'?
+This mobile-first application provides gameplay support for Animal Crossing: New Horizons. When a villager arrives at the campsite on your island, you can quickly pull out your NookPhone to learn the important facts of who they are. What is their personality? When is their birthday? Is their house a 'love-it' or 'list-it'?
 
 With this information just a click away, you can quickly decide whether to give that villager the boot or an invitation to stay. 
 
