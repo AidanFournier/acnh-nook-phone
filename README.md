@@ -18,7 +18,7 @@ This mobile-first application provides gameplay support for Animal Crossing New 
 
 With this information just a click away, you can quickly decide whether to give that villager the boot or an invitation to stay. 
 
-I creeated this app to practice some foundational skills of React, such as using props, hooks, and components, as well as making API calls.
+I created this app to practice some foundational skills of React, such as using props, hooks, and components, as well as making API calls.
 
 
 ## URL
